@@ -3,4 +3,7 @@ This is a shopping list. You can add item to buy and remove them.
 AngularJS is used to build this app. And css stylesheet is taken from 
 w3school for better view.
 
+To run the app go to following url:
+https://pankaj142.github.io/Shopping-List-app-using-AngularJS/app.html
+
 Thank you!
