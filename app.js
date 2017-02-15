@@ -21,7 +21,9 @@ var app=angular.module('myApp',[]);
         
         
         $scope.addItemFun =function(){
-           if(!$scope.addItem){return ;} 
+           if(!$scope.addItem){
+               $scope.errormsg="First enter item name then press add button.";
+               return ;} 
             if($scope.itemList.indexOf($scope.addItem)== -1)
                 {
                      $scope.itemList.push($scope.addItem); 
