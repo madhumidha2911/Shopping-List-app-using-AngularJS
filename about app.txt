@@ -1,0 +1,6 @@
+
+This is a shopping list. You can add item to buy and remove them.
+AngularJS is used to build this app. And css stylesheet is taken from 
+w3school for better view.
+
+Thank you!
