@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="angular.min.js"></script>
+        <script src="app.js"></script>
+        <link rel="stylesheet"   href="https://www.w3schools.com/lib/w3.css">
+
+        <title>shopping cart</title>
+    </head>
+    <body ng-app="myApp" >
+        <div ng-controller="myController" ng-cloak class="w3-card-2           w3-margin" style="max-width:400px;" >
+         <header class="w3-container w3-light-blue w3-padding-10">
+            <h4>ShopOnLine</h4>
+        </header>
+            
+            
+        <header class="w3-container w3-light-grey w3-padding-16">
+            <h3>My Shopping List</h3>
+        </header>
+            
+            
+        <ul class="w3-ul">
+            <li class="w3-padding-16" ng-repeat="item in itemList">         {{item}} <span ng-click="removeIt($index)"                        style="cursor:pointer;" class="w3-right w3-margin-                  right">×</span>  </li>    
+        </ul>
+            
+         <div class="w3-container w3-light-grey w3-padding-16">
+            <div class="w3-row w3-margin-top">
+                <div class="w3-col s10">
+        <input placeholder="enter item to add to list" ng-model="addItem" class="w3-input w3-border w3-padding">
+                </div>
+            <div class="w3-col s2">
+        <button ng-click="addItemFun()" class="w3-btn w3-padding w3-green">Add</button>
+            </div>
+            </div>
+    <p class="w3-padding-left w3-text-red">{{errormsg}}</p>
+        </div>   
+            
+            
+        </div>
+        
+    </body>
+
+</html>
